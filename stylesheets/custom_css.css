@@ -106,7 +106,7 @@ header {
 /* banner starts */
 #banner{
     margin-top: 52px;
-    height: 607px;
+    /*height: 607px;*/
     background: url('../images/1.jpg') no-repeat fixed;
     background-size: cover;
     background-position: top left;
@@ -687,6 +687,7 @@ header {
         transform: rotate(-45deg);
         margin-top: -15px;
     }
+
 }
     /* for large screen */
     @media(max-width: 1291px){
@@ -774,7 +775,7 @@ header {
         }
         .banner-inner-ltcol img {
             width: 230px;
-            margin-top: 25%;
+            /*margin-top: 25%;*/
         }
 
         /* banner............ */
@@ -863,6 +864,7 @@ header {
         .banner-inner-rtcol h2 {
             font-size: 18px;
         }
+
         .banner-inner-rtcol p {
             font-size: 1em;
             width: 100%;
@@ -876,8 +878,21 @@ header {
             padding: 10px 28px;
             font-size: 15px;
             margin: 20px 0;
+            letter-spacing: 3px;
+        }
+        .banner-inner-ltcol img{
+            border-radius: 10px 10px;
+
         }
 
+#banner{
+    /*margin-top: 52px;*/
+    height: 100%;
+}
+.banner-inner-ltcol img {
+            width: 100%;
+            /*margin-top: 25%;*/
+        }
         /* myself.............. */
         .myselfcol-inner-rt ul li h3 {
             font-size: 12px;
@@ -965,13 +980,13 @@ header {
             top: 1px;
         }
            .banner-inner-ltcol{
-            width: 200px;
+            width: 100%;
             margin: auto;
             text-align: center;
             margin-top: 15%;
         }
         .banner-inner-ltcol img {
-            width: 220px;
+            width: 210px;
         }
         .banner-inner-rtcol {
             text-align: center;
@@ -1088,7 +1103,8 @@ header {
 
     @media(max-width:480px){
           .banner-inner-ltcol img {
-            margin-top: 8%;
+            /*margin-top: 8%;*/
+            box-shadow: 1px 1px 20px #000;
         }
      
         .banner-inner-rtcol h2 {
