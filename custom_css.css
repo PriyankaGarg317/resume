@@ -1,0 +1,1230 @@
+ common css for all */
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix:after{
+    content: "";
+    display: table-cell;
+    clear: both;
+}
+.padzero{
+    padding-left: 0;
+    padding-right: 0;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+/* header starts */
+header {
+    background-color: #68217a; /* violet color */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    /* padding: 20px 0px 0px; */
+}
+.header-lft h1{
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 26px 45px;
+}
+.header-rgt{
+    position: relative;
+}
+.header-rgt ul {
+    padding: 23px 0px 0px;
+}
+.header-rgt > ul > li {
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+}
+.header-rgt ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    padding-bottom: 8px;
+}
+.header-rgt ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border: 2px solid #f58bda;
+    width: 100%;
+    transform: scale(0,1);
+    transition: 1s;
+    transform-origin: left;
+}
+.header-rgt ul li:hover a:after {
+    transform: scale(1,1);
+} 
+
+.menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+.menu-btn:focus{
+    outline: none;
+}
+.menu-btn .line{
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+    width: 30px;
+    margin-bottom: 5px;
+    transition: 1s;
+}/*header finish*/
+
+/* banner starts */
+#banner{
+    margin-top: 52px;
+    /*height: 607px;*/
+    background: url('../images/1.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: top left;
+}
+.banner-inner-ltcol{
+    text-align: left;
+    /* padding-top: 10%; */
+}
+.banner-inner-ltcol img{
+    /* width: 370px;
+    height: 606px; */
+    width: 343px;
+}
+.banner-inner-rtcol{
+    text-align: right;
+    padding-top: 30%
+}
+.banner-inner-rtcol p{
+    color: #fff;
+    letter-spacing: 9px;
+    font-size: 1.8em;
+    /* padding-right: 100px; */
+    width: 88%;
+    position: relative;
+    z-index: 2;
+}
+/* .banner-inner-rtcol p::before{
+    content: '';
+    width: 60%;
+    height: 3px;
+    color: red;
+    z-index: 1;
+    position: absolute;
+    top: 19px;
+    left: 335px;
+} */
+.banner-inner-rtcol h2{
+    color: #fff;
+    font-size: 54px;
+    letter-spacing: 8px;
+    width: 100%;
+    font-weight: 900;
+}
+.banner-inner-rtcol h3{
+    color: #fff;
+    font-size: 36px;
+    padding-top: 27px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+.banner-hirebtn{
+    padding: 10px 40px;
+    text-align: center;
+    margin: 40px 0;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+.banner-hirebtn:hover{
+    background-color: #f5810b;
+}
+
+/* myself section starts */
+.myselfcol-inner{
+    box-shadow: -2px 7px 27px -4px rgba(0,0,0,0.75);
+    border: 23px solid #fff;
+}
+.sec-heading{
+    text-align: center;
+    padding: 10% 0;
+}
+.sec-heading h2{
+    color: #68217a;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    position: relative;
+}
+.sec-heading h2::before{
+    content: '';
+    width: 12%;
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 44%;
+    margin-bottom: -1%;
+}
+.sec-heading h2::after{
+    content: '';
+    width: 4%;
+    height: 3px;
+    background-color: #f58bda;
+    position: absolute;
+    z-index: 2;
+    left: 48%;
+    bottom: 0;
+    margin-bottom: -1%;
+}
+.myselfcol-inner .owl-carousel .owl-nav{
+    display: none;
+}
+.myselfcol-inner .owl-carousel .owl-dots{
+    display: none;
+}
+/* .myself-innercol{
+    border: 30px solid #fff;
+    box-shadow: 1px 1px 20px #000;
+} */
+.myselfcol-inner-rt{
+    background-color: #68217a;
+    padding: 8%;
+    color: #ffffff;
+    padding-bottom: 1px;
+    box-shadow: 5px 5px 27px #000;
+}
+.myselfcol-inner-rt ul li{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 6%;
+    border-color: #fff6;
+}
+.myselfcol-inner-rt ul li h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.myselfcol-inner-rt ul li p{
+    opacity: 0.8;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* myskills section start */
+#myskills{
+    background: url('../images/2.jpg') fixed;
+    background-size: cover;
+    background-position: top left;
+    margin-top: 5%;
+    padding-bottom: 8%;
+}
+#myskills .sonny_progressbar p.title{
+    color: #ffffff;
+}
+#myskills .sonny_progressbar .bar-container {    
+    height: 5px!important;
+    border-radius: 10px!important;
+
+}
+#myskills .sonny_progressbar .bar-container .targetBar{
+    border-radius: 10px!important;
+}
+#myskills .sonny_progressbar .bar-container .bar{
+    border-radius: 10px!important;
+}
+/* .skills-collection skills ul li span{
+    float: right;
+} */
+
+/* myservices section start */
+#myservices{
+    padding-bottom: 6%;
+}
+.myservices-col{
+    position: relative;
+    background: #f5810b;
+    text-align: center;
+    padding: 15% 0;
+    width: 285px;
+    height: 300px;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    opacity: 0.9;
+    transition: 1s;
+}
+.myservices-col ul li i{
+    font-size: 70px;
+    padding-bottom: 20%; 
+}
+.myservices-col ul li h3{
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.myservices-col-hoverDiv{
+    background-color: #68217a;
+    position: absolute;
+    text-align: center;
+    padding: 15% 0;
+    width: 285px;
+    height: 300px;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    opacity: 0;
+    bottom: -50%;
+}
+.myservices-col:hover .myservices-col-hoverDiv{
+    opacity: 1;
+    bottom: 0;
+    transition: 1s;  
+}
+.myservices-col:hover{
+    transform: scale(1.1,1.1);
+}
+.myservices-col-hoverDiv ul li i{
+    padding-bottom: 3%;
+}
+.myservices-col-hoverDiv ul li h3{
+    font-size: 18px;
+}
+.myservices-col-hoverDiv ul li p{
+    font-size: 14px;
+    text-align: center;
+    padding: 10%;
+}
+
+/* interest section start */
+#interest{
+    background: url('../images/3.jpg') fixed;
+    background-position: top left;
+    background-size: cover;
+}
+.interest-col{
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 8%;
+}
+.interest-col i{
+    font-size: 50px;
+    padding-bottom: 10%;
+}
+.interest-col p{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+/* work experience section start */
+.work-exprnce-col{
+    padding-top: 5%;
+}
+.work-exprnce-col:nth-child(even) .work-exprnce-col-lft{
+    float: right;
+    clear: both;
+}
+.work-exprnce-lt p{
+    font-size: 18px;
+    color: #f5810b;
+}
+.work-exprnce-lt h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+}
+.work-exprnce-rt img{
+    width: 72%;
+}
+.work-exprnce-col:nth-child(odd) .work-exprnce-rt{
+    text-align: right;
+}
+.work-exprnce-col:nth-child(even) {
+    clear: both;
+}
+.work-exprnce-inner::after{
+    content: '';
+    width: 5px;
+    height: 70%;
+    background-color: #68217a;
+    left: 50%;
+    border-radius: 88px;
+    top: 305px;
+    position: absolute;
+}
+.work-exprnce-col::before{
+    content: '';
+    position: absolute;
+    top: 33px;
+    z-index: 1;
+    left: 540px;
+    background-color: #f58bda;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* my projects section start */
+#my-projects img{
+    width: 100%;
+}
+#my-projects img.proj-1{
+    max-height: 80%;
+    height: 75%;
+}
+#my-projects h4{
+    margin-bottom: 2%;
+    color: #000;
+}
+#my-projects ul{
+    list-style-type: circle;
+    padding-left: 2%;
+}
+#my-projects p{
+    color: #f5810b;
+    font-weight: bolder;
+    /*padding-top: 2%;*/
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* my education section start */
+#my-edu{
+    background-color: #000000;
+    margin-top: 8%;
+    background: #4c4c4c; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 46%, #2c2c2c 46%, #000000 49%, #111111 65%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 46%,#2c2c2c 46%,#000000 49%,#111111 65%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 46%,#2c2c2c 46%,#000000 49%,#111111 65%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* opacity: 0.9; */
+} 
+.Education-list{
+    padding-bottom: 8%;
+}
+.Education-list .accordion {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    border-bottom: 1px solid;
+}
+.Education-list .accordion span{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #f5810b;
+    letter-spacing: 2px;
+    font-weight: normal;
+    padding-left: 2%;
+}
+.Education-list .accordion span:hover{
+    color: #f58bda;
+}
+.Education-list .active, .Education-list .accordion:hover {
+    background-color: #ffffff;
+}
+
+.Education-list .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.Education-list .active:after {
+    content: "\2212";
+}
+
+.Education-list .panel {
+    padding: 0px 18px;
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    /* border-bottom: 1px solid #000000; */
+    transition: max-height 0.2s ease-out;
+}
+.Education-list .panel p{
+    padding-top: 2%;
+    letter-spacing: 2px;
+    color: #000000;
+}
+.Education-list .panel h4{
+  color: #f5810b;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+/* certificate section start */
+.certi-list{
+    padding-bottom: 8%;
+}
+.certi-list ul{
+    list-style: circle;
+    color: #000000;
+}
+.certi-list ul li{
+    padding: 1% 0;
+    color: #000000;
+}
+.certi-list ul li b{
+    color: #f5810b;
+}
+
+
+
+/* strength section start */
+#strength{
+    background: url('../images/4.jpg') fixed;
+    background-position: top left;
+    background-size: cover;
+}
+.strength-inner{
+    color: #ffffff;
+    padding:15% 5%;
+}
+.strength-inner h4{
+    font-size: 40px;
+    margin-bottom: 3%;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.strength-inner p{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+/* contact me section starts */
+.contactMe-col-lt{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 20px #000000;
+}
+.contact-inner{
+    padding-bottom: 5%;
+}
+.contact-form{
+    padding: 8%;
+    text-align: left;
+}
+.contact-form h2{
+    /* text-align: center; */
+    color: #68217a;
+    padding-bottom: 5%;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.contact-form input[type=text], .contact-form textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 3.5%;
+}
+.contact-form input[type=text]::placeholder{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #757575;
+}
+.contact-form textarea{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #757575;
+    resize: none;
+}
+.contact-form input[type=text]:focus, .contact-form textarea:focus{
+    outline: none;
+}
+.contact-form button.contact-sendbtn{
+    background-color: #f5810b;
+    border: 1px solid #f5810b;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 45px;
+}
+.contact-form button.contact-sendbtn:hover{
+    background-color: #ffffff;
+    border: 1px solid #f5810b;
+    color: #f5810b;
+}
+.contactMe-col-rt-innerDiv{
+    background-color: #ffffff;
+    box-shadow: 1px 1px 20px #000;
+    padding: 37px;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.contactMe-col-rt-innerDiv h2{
+    color: #68217a;
+    padding-bottom: 3.5%;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* footer starts */
+#social-site{
+    background-color: #232323;
+    padding: 2%;
+}
+.social-site-inner{
+    text-align: center;
+    padding-top: 10px; 
+}
+.social-site-inner ul li{
+    display: inline-block;
+    padding: 0 0.5%
+}
+.social-site-inner ul li a>i{
+    padding-top: 25%;
+    color: #ffffff;
+    background-color:#232323;
+    border: 1px solid #4d4d4d;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+.social-site-inner ul li a>i:hover{
+    background-color: #68217a;
+}
+
+/* scroll top starts */
+.scrollTop {
+    position: fixed;
+    right: 2%;
+    bottom: 10px;
+    background-color: #68217a;
+    padding: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .scrollTop a {
+    font-size: 18px;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+/* media query */
+
+/* header menu-btn for mobiles */
+
+@media(max-width: 768px){
+    .menu-btn {
+        display: block;
+        outline: none;
+    }
+    .header-rgt > ul {
+        position: absolute;
+        width: 90%;
+        top: 72px;
+        right: 0px;
+        transform: translateX(-175%);
+        background-color: rgba(0,0,0,0.7);
+        text-align: center;
+        transition: 1s;
+    }
+    .header-rgt ul li {
+        display: block;
+    }
+    .header-rgt ul li a {
+        color: #fff;
+        display: inline-block;
+    }
+    .header-rgt.active ul {
+        /* display: block; */
+        transform: translate(0%);
+    }
+    .header-rgt.active .menu-btn .line:nth-child(2){
+        opacity: 0;
+    }
+    .header-rgt.active .menu-btn .line:first-child{
+        margin-top: 10px;
+        transform: rotate(45deg);
+    }
+    .header-rgt.active .menu-btn .line:last-child{
+        transform: rotate(-45deg);
+        margin-top: -15px;
+    }
+
+}
+    /* for large screen */
+    @media(max-width: 1291px){
+        
+    /* header....... */
+        .header-rgt > ul > li {
+            margin: 0px 8px;
+        }
+        .header-rgt ul li a {
+            font-size: 14px;
+        }
+    }
+
+    @media(max-width:1199px){
+
+        /* header....... */
+        .header-rgt > ul > li {
+            margin: 0px 6px;
+        }
+        .header-rgt ul li a {
+            font-size: 13px;
+        }
+
+        /* banner.......... */
+        .banner-inner-rtcol h2 {
+            font-size: 46px;
+        }
+
+        /* my self.............. */
+        .myselfcol-inner-rt ul li{
+            margin-bottom: 3%;
+        }
+
+        /* work-experience.............. */
+        .work-exprnce-col::before {
+           left: 450px;
+        }
+        .work-exprnce-inner::after {
+            top: 265px;
+        }
+        .work-exprnce-lt h3 {
+            font-size: 20px;
+        }
+
+        /* contact me.................. */
+        .contactMe-col-rt-innerDiv {
+            margin-bottom: 4%;
+        }
+    }
+
+    @media(max-width:1024px){
+
+        /* header....... */
+        .header-rgt > ul > li {
+            margin: 0px 4px;
+        }
+        .header-rgt ul li a {
+            font-size: 12px;
+        }
+
+        /* my services......... */
+        .myservices-col {
+            width: 260px;
+            height: 280px
+        }
+        .myservices-col-hoverDiv {
+            width: 260px;
+            height: 280px;
+        }        
+
+    }
+
+    @media(max-width:991px){
+
+        /* header....... */
+        .header-rgt > ul > li {
+            /* margin: 0px 2px; */
+        }
+        .header-rgt ul li a {
+            font-size: 10px;
+        }
+        .header-lft h1 {
+            font-size: 0.8rem;
+            padding: 29px 30px;
+        }
+        .banner-inner-ltcol img {
+            width: 230px;
+            /*margin-top: 25%;*/
+        }
+
+        /* banner............ */
+        .banner-inner-rtcol h2 {
+            font-size: 22px;
+        }
+        .banner-inner-rtcol p {
+            font-size:18px;
+        }
+        .banner-inner-rtcol h3 {
+            font-size: 18px
+        }
+
+        /* myself.............. */
+        .myselfcol-inner-rt ul li h3 {
+            font-size: 16px;
+            margin-bottom: 2%;
+        }
+        .myselfcol-inner-rt ul li p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        /* my services............. */
+        .myservices-col {
+            width: 210px;
+            height: 240px;
+        }
+        .myservices-col-hoverDiv {
+            width: 210px;
+            height: 240px;
+        }
+        .myservices-col ul li i {
+            font-size: 50px;
+            padding-bottom: 15%;
+        }
+        .myservices-col ul li h3 {
+            font-size: 18px;
+        }
+        .myservices-col-hoverDiv ul li p {
+            font-size: 12px;
+        }
+
+        /* interest................. */
+        .interest-col p {
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+
+        /* work-experience......... */
+        .work-exprnce-inner::after {
+            top: 200px;
+        }
+        .work-exprnce-col::before {
+            top: 15px;
+            left: 330px;
+        }
+        .work-exprnce-lt h3 {
+            font-size: 14px;
+        }
+
+        /* contact me............... */
+        .contactMe-col-rt-innerDiv {
+            margin-bottom: 6%;
+        }
+        .contact-form h2 {
+            font-size: 28px;
+        }
+        .contactMe-col-rt-innerDiv h2 {
+            font-size: 28px;
+        }
+        .contactMe-col-rt-innerDiv p {
+            font-size: 15px;
+        }
+
+        /* social site last section.......... */
+        .social-site-inner ul li a>i {
+            font-size: 16px;
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    @media(max-width:767px){
+        /* banner.......... */
+        .banner-inner-rtcol h2 {
+            font-size: 18px;
+        }
+
+        .banner-inner-rtcol p {
+            font-size: 1em;
+            width: 100%;
+            margin-bottom: 1%;
+        }
+        .banner-inner-rtcol h3 {
+            font-size: 16px;
+            padding-top:3%;
+        }
+        .banner-hirebtn {
+            padding: 10px 28px;
+            font-size: 15px;
+            margin: 20px 0;
+            letter-spacing: 3px;
+        }
+        .banner-inner-ltcol img{
+            border-radius: 10px 10px;
+
+        }
+
+#banner{
+    /*margin-top: 52px;*/
+    height: 100%;
+}
+.banner-inner-ltcol img {
+            width: 100%;
+            /*margin-top: 25%;*/
+        }
+        /* myself.............. */
+        .myselfcol-inner-rt ul li h3 {
+            font-size: 12px;
+            margin-bottom: 2%;
+        }
+        .myselfcol-inner-rt ul li p {
+            font-size: 8px;
+        }
+
+        /* my services....... */
+        .myservices-col {
+            width: 150px;
+            height: 185px;
+        }
+        .myservices-col-hoverDiv {
+            width: 150px;
+            height: 185px;
+        }
+        .myservices-col ul li i {
+            font-size: 40px;
+            padding-bottom: 12%;
+        }
+        .myservices-col ul li h3 {
+            font-size: 14px;
+        }
+        .myservices-col-hoverDiv ul li p {
+            font-size: 10px;
+        }
+
+        /* interest................ */
+        .interest-col p {
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        /* work-exprnce.............. */
+        .work-exprnce-inner::after {
+            top: 165px;
+        }
+        .work-exprnce-col::before {
+            top: 15px;
+            left: 240px;
+        }
+        .work-exprnce-lt h3 {
+            font-size: 11px;
+        }
+
+         /* contact me............... */
+         .contactMe-col-rt-innerDiv {
+            margin-bottom: 5.5%;
+        }
+        .contact-form h2 {
+            font-size: 18px;
+        }
+        .contactMe-col-rt-innerDiv h2 {
+            font-size: 18px;
+        }
+        .contactMe-col-rt-innerDiv p {
+            font-size: 12px;
+        }
+        .contact-form button.contact-sendbtn {
+            padding: 6px 20px;
+        }
+        /* social site last section.......... */
+        .social-site-inner ul li a>i {
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+        }
+
+        /* scroll top fixed btn................ */
+        .scrollTop {
+            padding: 10px;
+        }
+
+    }
+
+    @media(max-width:575px){
+        /* header menu-btn................ */
+        .menu-btn {
+            top: -50px;
+        }
+        .header-rgt > ul {
+            width: 100%;
+            top: 1px;
+        }
+           .banner-inner-ltcol{
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            margin-top: 15%;
+        }
+        .banner-inner-ltcol img {
+            width: 210px;
+        }
+        .banner-inner-rtcol {
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        /* section heading........... */
+        .sec-heading h2 {
+            font-size: 34px;
+        }
+
+        /* my services.................... */
+        .myservices-col {
+            width: 85%;
+            height: 300px;
+            margin-left: 8%;
+            margin-bottom: 3%;
+        }
+        .myservices-col-hoverDiv{
+            width: 100%;
+            height: 300px;
+        }
+        .myservices-col ul li i {
+            font-size: 60px;
+            padding-bottom: 8%;
+        }
+        .myservices-col ul li h3 {
+            font-size: 17px;
+        }
+        .myservices-col-hoverDiv ul li p {
+            font-size: 13px;
+        }
+        .myservices-col:hover {
+            transform: scale(1.03,1.03);
+        }
+
+        /* interest.................. */
+        .interest-col i {
+            padding-bottom: 4%;
+        }
+        .interest-col p {
+            font-size: 18px;
+        }
+
+          /* work-exprnce.............. */
+          .work-exprnce-inner::after {
+           display: none;
+        }
+        .work-exprnce-col::before {
+            display: none;
+        }
+        .work-exprnce-rt img {
+            width: 100%;
+        }
+        .work-exprnce-lt h3 {
+            margin-bottom: 2%;
+            font-size: 18px;
+        }
+
+        /* my-edu............... */
+        .Education-list .accordion span {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        .Education-list .accordion {
+            font-size: 12px;
+        }
+        .Education-list .panel p {
+            font-size: 12px;
+        }
+
+        /* certificte................... */
+        .certi-list ul li {
+           font-size: 13px;
+        }
+        .certi-list ul {
+           padding-left: 5%;
+        }
+
+        /* strength.................... */
+        .strength-inner h4 {
+            font-size: 32px;
+        }
+        .strength-inner p {
+            font-size: 17px;
+        }
+
+        /* contact me.................. */
+        .contact-form h2 {
+            font-size: 25px;
+        }
+        .contactMe-col-rt-innerDiv h2 {
+            font-size: 25px;
+        }
+        .contactMe-col-rt-innerDiv {
+            margin-left: 0;
+        }
+        .contactMe-col-lt{
+            margin-bottom: 6%;
+        }
+        .contact-form button.contact-sendbtn {
+            padding: 10px 38px;
+        }
+
+        /* scroll top fixed btn................ */
+        .scrollTop {
+            padding: 8px;
+            z-index: 1;
+        }
+        .scrollTop a {
+            font-size: 17px;
+        }
+
+        /*my projects.........................*/
+        #my-projects h4 {
+            font-size: 16px;
+        }
+        #my-projects p {
+             font-size: 13px;
+        }
+        #my-projects ul {
+             padding-left: 8%;
+        }
+    }
+
+    @media(max-width:480px){
+          .banner-inner-ltcol img {
+            /*margin-top: 8%;*/
+            box-shadow: 1px 1px 20px #000;
+        }
+     
+        .banner-inner-rtcol h2 {
+            font-size: 12px;
+        }
+        .banner-inner-rtcol p {
+            font-size: 0.7em;
+        }
+        .banner-inner-rtcol h3 {
+           font-size: 11px;
+        }
+
+         /* section heading........... */
+         .sec-heading h2 {
+            font-size: 22px;
+        }
+
+        /* my services.......... */
+        .myservices-col {
+            width: 85%;
+            height: 250px;
+        }
+        .myservices-col-hoverDiv{
+            width: 100%;
+            height: 250px;
+        }
+
+        /* interest.................. */
+        .interest-col i {
+            padding-bottom: 5%;
+        }
+        .interest-col p {
+            font-size: 16px;
+        }
+
+        /* work-exprnce.............. */
+        .work-exprnce-lt h3 {
+            font-size: 14px;
+        }
+        
+        /* my-edu............... */
+        .Education-list .accordion span {
+            font-size: 8px;
+            letter-spacing: 0px;
+            padding-left: 0%;
+        }
+        .Education-list .accordion {
+            font-size: 8px;
+        }
+        .Education-list .panel p {
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* certificte................... */
+        .certi-list ul li {
+            font-size: 11px;
+        }
+
+         /* strength.................... */
+         .strength-inner h4 {
+            font-size: 28px;
+        }
+        .strength-inner p {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* contact me.................... */
+        .contactMe-col-rt-innerDiv h2 {
+            font-size: 20px;
+        }
+        .contact-form button.contact-sendbtn {
+            padding: 7px 25px;
+        }
+        .contactMe-col-lt {
+            margin-bottom: 12%;
+        }
+        .contactMe-col-rt-innerDiv {
+            margin-bottom: 12%;
+        }
+
+         /* social site last section.......... */
+         .social-site-inner ul li a>i {
+            font-size: 11px;
+            width: 23px;
+            height: 23px;
+        }
+
+        /* scroll top fixed btn................ */
+        .scrollTop {
+            padding: 6px;
+        }
+        .scrollTop a {
+            font-size: 15px;
+        }
+    }
+
+ /*   @media(max-width: 375px){
+          .banner-inner-ltcol img {
+            margin-top: 8%;
+        }
+    }
